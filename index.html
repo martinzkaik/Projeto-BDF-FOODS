@@ -1,223 +1,749 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BDF FOODS</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BDF FOODS — Fornecedor de Alimentos para Food Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="BDF FOODS">
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="BDF FOODS">
+  </div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#atende">Quem Atendemos</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#como">Como Funciona</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://wa.me/5511963404005" target="_blank" class="nav-cta">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <i class="fa-solid fa-circle-check"></i>
+      Representação Comercial · Food Service
+    </div>
+    <h1 class="display">
+      Fornecedor de alimentos para<br>
+      <span>food service</span> em SP
+    </h1>
+    <p class="hero-sub">
+      Cote produtos para restaurante, pizzaria, buffet, mercado, lanchonete ou cozinha profissional com quem entende da rotina do seu negócio.
+    </p>
+    <p class="hero-sub2">
+      A BDF FOODS conecta sua empresa a grandes marcas, distribuidores e soluções alimentícias com atendimento próximo, variedade de produtos e foco em abastecimento eficiente.
+    </p>
+    <div class="hero-pills">
+      <span class="pill">Food Service</span>
+      <span class="pill">Atacado &amp; Varejo</span>
+      <span class="pill">São Paulo e região</span>
+    </div>
+    <div class="hero-btns">
+      <a href="https://wa.me/5511963404005" target="_blank" class="btn-primary">
+        <i class="fa-brands fa-whatsapp"></i>
+        Solicitar Atendimento no WhatsApp
+      </a>
+      <a href="#produtos" class="btn-outline">
+        Ver Produtos
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num">+500</div>
+    <div class="stat-label">Empresas Atendidas</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">+1.000</div>
+    <div class="stat-label">Produtos Comercializados</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">24h</div>
+    <div class="stat-label">Tempo médio de retorno</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">Atendimento B2B</div>
+  </div>
+</div>
+
+<!-- ILUSTRAÇÃO -->
+<section class="ilustracao-section">
+  <div class="ilu-header">
+    <span class="eyebrow" style="color:var(--red);">A Cadeia Completa</span>
+    <h2 class="section-title display">Da origem ao seu negócio,<br>a BDF FOODS conecta tudo</h2>
+  </div>
+  <div class="ilu-wrap">
+    <svg class="ilu-svg" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustração da cadeia de distribuição BDF FOODS">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0E0E0E"/><stop offset="100%" stop-color="#1a1a2e"/>
+        </linearGradient>
+        <linearGradient id="roadGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#1a1a1a"/><stop offset="100%" stop-color="#2a2a2a"/>
+        </linearGradient>
+        <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#E60000"/><stop offset="100%" stop-color="#FF4444"/>
+        </linearGradient>
+        <linearGradient id="buildGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#2a2a3e"/><stop offset="100%" stop-color="#1a1a2a"/>
+        </linearGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="softglow"><feGaussianBlur stdDeviation="8" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- BG -->
+      <rect width="900" height="480" fill="url(#skyGrad)"/>
+      <!-- STARS -->
+      <g opacity="0.35">
+        <circle cx="50" cy="30" r="1" fill="#fff"/><circle cx="120" cy="15" r="1.5" fill="#fff"/>
+        <circle cx="200" cy="45" r="1" fill="#fff"/><circle cx="350" cy="20" r="1" fill="#fff"/>
+        <circle cx="500" cy="35" r="1.5" fill="#fff"/><circle cx="650" cy="18" r="1" fill="#fff"/>
+        <circle cx="780" cy="40" r="1" fill="#fff"/><circle cx="850" cy="22" r="1.5" fill="#fff"/>
+        <circle cx="430" cy="55" r="1" fill="#fff"/><circle cx="90" cy="60" r="1" fill="#fff"/>
+        <circle cx="710" cy="50" r="1" fill="#fff"/>
+      </g>
+      <!-- ROAD -->
+      <rect x="0" y="360" width="900" height="55" fill="url(#roadGrad)"/>
+      <rect x="0" y="358" width="900" height="3" fill="#2a2a2a"/>
+      <rect x="0" y="413" width="900" height="3" fill="#2a2a2a"/>
+      <g fill="#383838">
+        <rect x="40" y="384" width="55" height="5" rx="2.5"/>
+        <rect x="180" y="384" width="55" height="5" rx="2.5"/>
+        <rect x="320" y="384" width="55" height="5" rx="2.5"/>
+        <rect x="460" y="384" width="55" height="5" rx="2.5"/>
+        <rect x="600" y="384" width="55" height="5" rx="2.5"/>
+        <rect x="740" y="384" width="55" height="5" rx="2.5"/>
+      </g>
+      <!-- GROUND -->
+      <rect x="0" y="415" width="900" height="65" fill="#0a0a0a"/>
+
+      <!-- FACTORY LEFT -->
+      <g>
+        <rect x="28" y="225" width="125" height="138" rx="4" fill="url(#buildGrad)" stroke="#2a2a2a" stroke-width="1.5"/>
+        <rect x="44" y="240" width="26" height="20" rx="2" fill="#E60000" opacity="0.8"/>
+        <rect x="80" y="240" width="26" height="20" rx="2" fill="#E60000" opacity="0.5"/>
+        <rect x="116" y="240" width="24" height="20" rx="2" fill="#E60000" opacity="0.3"/>
+        <rect x="44" y="272" width="26" height="20" rx="2" fill="#1a2a3a" opacity="0.9"/>
+        <rect x="80" y="272" width="26" height="20" rx="2" fill="#1a2a3a" opacity="0.9"/>
+        <rect x="116" y="272" width="24" height="20" rx="2" fill="#E60000" opacity="0.35"/>
+        <rect x="44" y="304" width="26" height="20" rx="2" fill="#1a2a3a" opacity="0.9"/>
+        <rect x="80" y="304" width="26" height="20" rx="2" fill="#1a2a3a" opacity="0.9"/>
+        <rect x="70" y="333" width="32" height="30" rx="2" fill="#070707"/>
+        <!-- chimneys -->
+        <rect x="52" y="188" width="16" height="42" rx="3" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+        <rect x="96" y="198" width="13" height="32" rx="3" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+        <!-- smoke -->
+        <ellipse cx="60" cy="182" rx="9" ry="7" fill="#555" opacity="0">
+          <animate attributeName="cy" values="182;158;182" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.45;0;0.45" dur="3s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="102" cy="192" rx="7" ry="5" fill="#555" opacity="0">
+          <animate attributeName="cy" values="192;172;192" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.35;0;0.35" dur="2.4s" repeatCount="indefinite"/>
+        </ellipse>
+        <!-- label -->
+        <rect x="28" y="152" width="125" height="24" rx="6" fill="#E60000" opacity="0.12"/>
+        <text x="90" y="168" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#ff6b6b" letter-spacing="1">INDUSTRIA</text>
+      </g>
+
+      <!-- BDF HUB CENTER -->
+      <g>
+        <circle cx="450" cy="275" r="88" fill="#E60000" opacity="0.03" filter="url(#softglow)"/>
+        <circle cx="450" cy="275" r="72" fill="none" stroke="#E60000" stroke-width="1" opacity="0.18" stroke-dasharray="7,5"/>
+        <rect x="368" y="208" width="164" height="136" rx="16" fill="#120808" stroke="#E60000" stroke-width="1.8"/>
+        <rect x="368" y="208" width="164" height="6" rx="4" fill="url(#redGrad)"/>
+        <!-- warehouse icon -->
+        <polygon points="450,230 478,246 422,246" fill="#E60000" opacity="0.9"/>
+        <rect x="428" y="246" width="44" height="26" rx="3" fill="#E60000" opacity="0.75"/>
+        <rect x="440" y="254" width="20" height="18" rx="2" fill="#070707"/>
+        <rect x="430" y="250" width="8" height="9" rx="1" fill="rgba(255,200,200,0.2)"/>
+        <rect x="462" y="250" width="8" height="9" rx="1" fill="rgba(255,200,200,0.2)"/>
+        <!-- text -->
+        <text x="450" y="295" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="900" fill="#ffffff" letter-spacing="-0.3">BDF FOODS</text>
+        <text x="450" y="313" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#E60000" letter-spacing="2" font-weight="700">REPRESENTACAO COMERCIAL</text>
+        <!-- pulse -->
+        <circle cx="450" cy="275" r="72" fill="none" stroke="#E60000" stroke-width="1.5" opacity="0">
+          <animate attributeName="r" values="72;108" dur="2.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.4;0" dur="2.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="450" cy="275" r="72" fill="none" stroke="#E60000" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="72;108" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.25;0" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+
+      <!-- TRUCK ANIMATED -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-210,0;650,0" dur="9s" repeatCount="indefinite" calcMode="linear"/>
+        <rect x="0" y="318" width="118" height="44" rx="4" fill="#181818" stroke="#2a2a2a" stroke-width="1.5"/>
+        <rect x="0" y="318" width="118" height="7" rx="2" fill="#E60000"/>
+        <text x="59" y="348" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="900" fill="#fff" opacity="0.85">BDF FOODS</text>
+        <rect x="118" y="328" width="52" height="34" rx="6" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1.5"/>
+        <rect x="118" y="328" width="52" height="5" rx="2" fill="#E60000"/>
+        <rect x="140" y="333" width="24" height="15" rx="3" fill="#1a3050" opacity="0.95"/>
+        <circle cx="22" cy="365" r="9" fill="#0d0d0d" stroke="#444" stroke-width="2"/>
+        <circle cx="22" cy="365" r="3.5" fill="#333"/>
+        <circle cx="90" cy="365" r="9" fill="#0d0d0d" stroke="#444" stroke-width="2"/>
+        <circle cx="90" cy="365" r="3.5" fill="#333"/>
+        <circle cx="143" cy="365" r="9" fill="#0d0d0d" stroke="#444" stroke-width="2"/>
+        <circle cx="143" cy="365" r="3.5" fill="#333"/>
+        <ellipse cx="169" cy="342" rx="4" ry="3" fill="#FFD700" filter="url(#glow)" opacity="0.85"/>
+      </g>
+
+      <!-- RESTAURANT RIGHT -->
+      <g>
+        <rect x="742" y="235" width="128" height="128" rx="4" fill="url(#buildGrad)" stroke="#2a2a2a" stroke-width="1.5"/>
+        <rect x="737" y="272" width="138" height="18" rx="3" fill="#E60000"/>
+        <line x1="737" y1="272" x2="737" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <line x1="760" y1="272" x2="760" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <line x1="783" y1="272" x2="783" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <line x1="806" y1="272" x2="806" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <line x1="829" y1="272" x2="829" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <line x1="852" y1="272" x2="852" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <line x1="875" y1="272" x2="875" y2="290" stroke="#B80000" stroke-width="1.5"/>
+        <rect x="754" y="242" width="28" height="22" rx="3" fill="#1a3050" opacity="0.95"/>
+        <rect x="793" y="242" width="28" height="22" rx="3" fill="#1a3050" opacity="0.95"/>
+        <rect x="832" y="242" width="26" height="22" rx="3" fill="#1a3050" opacity="0.6"/>
+        <rect x="754" y="242" width="28" height="22" rx="3" fill="#FFD700" opacity="0.08"/>
+        <rect x="793" y="242" width="28" height="22" rx="3" fill="#FFD700" opacity="0.08"/>
+        <rect x="782" y="323" width="30" height="40" rx="3" fill="#070707"/>
+        <circle cx="808" cy="345" r="2" fill="#444"/>
+        <rect x="756" y="218" width="88" height="18" rx="5" fill="#E60000"/>
+        <text x="800" y="231" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff" letter-spacing="0.5">RESTAURANTE</text>
+        <rect x="742" y="152" width="128" height="24" rx="6" fill="#E60000" opacity="0.12"/>
+        <text x="806" y="168" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#ff6b6b" letter-spacing="1">FOOD SERVICE</text>
+      </g>
+
+      <!-- PRODUCT CARDS floating -->
+      <g opacity="0.92">
+        <g><rect x="192" y="98" width="88" height="48" rx="8" fill="#16213e" stroke="#E60000" stroke-width="1"/>
+        <text x="236" y="118" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#ff6b6b" font-weight="700">CONGELADOS</text>
+        <text x="236" y="134" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Carnes · Proteinas</text>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="4s" repeatCount="indefinite"/></g>
+
+        <g><rect x="308" y="58" width="88" height="48" rx="8" fill="#16213e" stroke="#E60000" stroke-width="1"/>
+        <text x="352" y="78" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#ff6b6b" font-weight="700">LATICINIOS</text>
+        <text x="352" y="94" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Queijos · Embutidos</text>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,10;0,0" dur="3.5s" repeatCount="indefinite"/></g>
+
+        <g><rect x="508" y="55" width="88" height="48" rx="8" fill="#16213e" stroke="#E60000" stroke-width="1"/>
+        <text x="552" y="75" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#ff6b6b" font-weight="700">MASSAS</text>
+        <text x="552" y="91" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Molhos · Condimentos</text>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="4.5s" repeatCount="indefinite"/></g>
+
+        <g><rect x="615" y="92" width="88" height="48" rx="8" fill="#16213e" stroke="#E60000" stroke-width="1"/>
+        <text x="659" y="112" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#ff6b6b" font-weight="700">ATACADO</text>
+        <text x="659" y="128" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Volume · Varejo</text>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,10;0,0" dur="3.8s" repeatCount="indefinite"/></g>
+      </g>
+
+      <!-- WA BADGE -->
+      <g opacity="0.95">
+        <rect x="408" y="148" width="84" height="30" rx="10" fill="#25D366"/>
+        <text x="450" y="168" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fff" font-weight="700">WhatsApp</text>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- CONNECTION DASHED LINES -->
+      <line x1="155" y1="285" x2="368" y2="275" stroke="#E60000" stroke-width="1.5" stroke-dasharray="8,5" opacity="0.35">
+        <animate attributeName="stroke-dashoffset" values="0;-52" dur="1.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="532" y1="275" x2="742" y2="285" stroke="#E60000" stroke-width="1.5" stroke-dasharray="8,5" opacity="0.35">
+        <animate attributeName="stroke-dashoffset" values="0;-52" dur="1.5s" repeatCount="indefinite"/>
+      </line>
+      <!-- animated dots -->
+      <circle r="4.5" fill="#E60000" filter="url(#glow)" opacity="0.9">
+        <animateMotion dur="2s" repeatCount="indefinite" path="M155,285 Q262,255 368,275"/>
+      </circle>
+      <circle r="4.5" fill="#E60000" filter="url(#glow)" opacity="0.9">
+        <animateMotion dur="2s" repeatCount="indefinite" path="M532,275 Q638,255 742,285"/>
+      </circle>
+
+      <!-- BOTTOM BAR -->
+      <rect x="280" y="433" width="340" height="28" rx="8" fill="#E60000" opacity="0.08"/>
+      <text x="450" y="451" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#E60000" letter-spacing="2">SAO PAULO E REGIAO</text>
+    </svg>
+  </div>
+</section>
+
+<!-- DOR / PROBLEMA -->
+<section class="dor">
+  <div class="dor-grid">
+    <div class="dor-text">
+      <span class="eyebrow">O Problema</span>
+      <h2 class="section-title display">Comprar alimentos para o negócio não pode ser uma dor de cabeça</h2>
+      <p>Quem trabalha com food service sabe: <strong>fornecedor precisa entregar mais do que produto.</strong></p>
+      <p>Precisa ter preço competitivo, variedade, agilidade no atendimento e compromisso com a rotina da sua operação.</p>
+      <p>Afinal, quando falta produto, atrasa pedido, trava produção ou o atendimento demora, quem sente o impacto é o seu negócio.</p>
+      <p>Por isso, contar com uma <strong>ponte comercial preparada</strong> faz toda a diferença.</p>
+      <a href="https://wa.me/5511963404005" target="_blank" class="btn-dark">
+        <i class="fa-brands fa-whatsapp"></i>
+        Falar com um representante agora
+      </a>
+    </div>
+    <div class="dor-cards">
+      <div class="dor-card">
+        <div class="dor-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div>
+          <h4>Agilidade no atendimento</h4>
+          <p>Nada de atendimento distante ou demorado. Suporte comercial direto para sua empresa.</p>
         </div>
-
-        <nav>
-            <a href="#produtos">Produtos</a>
-            <a href="#solucoes">Soluções</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-
-        <div class="hero-text">
-
-            <span class="tag">
-                Distribuição Inteligente
-            </span>
-
-            <h1>
-                Soluções para Food Service, Atacado e Varejo
-            </h1>
-
-            <p>
-                A BDF FOODS conecta restaurantes, pizzarias, padarias,
-                mercados, lanchonetes e cozinhas profissionais às melhores
-                oportunidades comerciais do setor alimentício, oferecendo
-                atendimento próximo, variedade de produtos e suporte para
-                empresas que buscam crescer com mais eficiência.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="https://wa.me/5511963404005"
-                   target="_blank"
-                   class="btn-primary">
-
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Solicitar Atendimento
-
-                </a>
-
-                <a href="#produtos" class="btn-secondary">
-                    Ver Produtos
-                </a>
-
-            </div>
-
+      </div>
+      <div class="dor-card">
+        <div class="dor-icon"><i class="fa-solid fa-tags"></i></div>
+        <div>
+          <h4>Preço competitivo</h4>
+          <p>Acesso a oportunidades comerciais com distribuidores e marcas parceiras do setor.</p>
         </div>
-
-        <div class="hero-image"></div>
-
-    </section>
-
-    <section class="produtos" id="produtos">
-
-        <h2>Produtos</h2>
-
-        <p class="section-text">
-            Trabalhamos para conectar empresas do food service,
-            atacado e varejo a fornecedores, distribuidores e
-            marcas parceiras, oferecendo soluções comerciais que
-            ajudam a manter sua operação abastecida com qualidade
-            e competitividade.
-        </p>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <i class="fa-solid fa-box"></i>
-
-                <h3>Food Service</h3>
-
-                <p>
-                    Soluções voltadas para restaurantes, pizzarias,
-                    lanchonetes, cozinhas industriais e estabelecimentos
-                    que precisam de abastecimento constante e atendimento
-                    comercial especializado.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-store"></i>
-
-                <h3>Atacado</h3>
-
-                <p>
-                    Apoio comercial para empresas que realizam compras
-                    em volume e buscam melhores oportunidades de negociação,
-                    variedade de produtos e condições competitivas.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <h3>Varejo</h3>
-
-                <p>
-                    Atendimento para mercados, conveniências e lojas que
-                    desejam ampliar suas opções de abastecimento e fortalecer
-                    suas operações com parceiros confiáveis.
-                </p>
-
-            </div>
-
+      </div>
+      <div class="dor-card">
+        <div class="dor-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <div>
+          <h4>Variedade de produtos</h4>
+          <p>Congelados, carnes, proteínas, laticínios, massas, molhos e muito mais.</p>
         </div>
-
-    </section>
-
-    <section class="solucoes" id="solucoes">
-
-        <div class="solucao-text">
-
-            <h2>
-                Soluções Comerciais Inteligentes
-            </h2>
-
-            <p>
-                A BDF FOODS atua como ponte entre compradores,
-                distribuidores e grandes marcas, facilitando negociações
-                e aproximando empresas das melhores oportunidades do mercado.
-            </p>
-
-            <p>
-                Entendemos que cada negócio possui necessidades diferentes.
-                Por isso, buscamos oferecer atendimento próximo, suporte
-                comercial e soluções alinhadas à realidade de cada cliente.
-            </p>
-
-            <p>
-                Mais do que vender produtos, trabalhamos para construir
-                relacionamentos comerciais duradouros que ajudam empresas
-                a crescer de forma sustentável e competitiva.
-            </p>
-
-            <a href="https://wa.me/5511963404005"
-               target="_blank"
-               class="btn-primary">
-
-                <i class="fa-brands fa-whatsapp"></i>
-                Solicitar Atendimento pelo WhatsApp
-
-            </a>
-
+      </div>
+      <div class="dor-card">
+        <div class="dor-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div>
+          <h4>Relacionamento comercial</h4>
+          <p>Mais do que cotar — construímos parcerias que ajudam sua operação a crescer.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
+<!-- QUEM ATENDEMOS -->
+<section class="atende" id="atende">
+  <span class="eyebrow">Quem Atendemos</span>
+  <h2 class="section-title display">Atendimento para empresas que precisam comprar alimentos com mais estratégia</h2>
+  <p class="section-lead">A BDF FOODS atende negócios que compram com frequência, precisam de fornecedores confiáveis e buscam melhores oportunidades comerciais.</p>
+  <div class="atende-grid">
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-utensils"></i></div>
+      <h3>Restaurantes</h3>
+      <p>Compradores de food service e operações profissionais.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+      <h3>Pizzarias</h3>
+      <p>Abastecimento constante com suporte comercial especializado.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-star"></i></div>
+      <h3>Buffets</h3>
+      <p>Soluções para operações de alto volume com variedade.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-mug-hot"></i></div>
+      <h3>Lanchonetes &amp; Padarias</h3>
+      <p>Fornecimento ágil para operações diárias de alta demanda.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-store"></i></div>
+      <h3>Mercados &amp; Varejo</h3>
+      <p>Variedade de produtos e oportunidades comerciais competitivas.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-industry"></i></div>
+      <h3>Cozinhas Industriais</h3>
+      <p>Soluções para operações de grande volume e recorrência.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-network-wired"></i></div>
+      <h3>Redes Alimentícias</h3>
+      <p>Atendimento B2B para redes com múltiplas unidades.</p>
+    </div>
+    <div class="atende-card">
+      <div class="ac-icon"><i class="fa-solid fa-truck"></i></div>
+      <h3>Distribuidores</h3>
+      <p>Parcerias e oportunidades comerciais para revenda.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="contato" id="contato">
+<!-- POR QUE / ABAS -->
+<section class="porque" id="solucoes">
+  <span class="eyebrow">Diferenciais</span>
+  <h2 class="section-title display">Por que comprar com a BDF FOODS?</h2>
+  <p class="section-lead">Atendimento comercial próximo, foco em food service e conexão real com marcas e distribuidores do setor alimentício.</p>
 
-        <h2>Contato</h2>
+  <div class="tabs-wrapper">
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="t1">Atendimento Próximo</button>
+      <button class="tab-btn" data-tab="t2">Foco em Food Service</button>
+      <button class="tab-btn" data-tab="t3">Marcas &amp; Distribuidores</button>
+      <button class="tab-btn" data-tab="t4">Negociação B2B</button>
+      <button class="tab-btn" data-tab="t5">Atuação em SP</button>
+      <button class="tab-btn" data-tab="t6">Quem Somos</button>
+    </div>
+    <div class="tabs-content">
 
-        <p>
-            Entre em contato com nossa equipe e descubra como a BDF FOODS
-            pode ajudar sua empresa a encontrar melhores oportunidades
-            comerciais, ampliar opções de abastecimento e fortalecer
-            suas operações no mercado alimentício.
-        </p>
-
-        <div class="contact-box">
-
-            <div class="contact-item">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-                <div>
-                    <h3>WhatsApp</h3>
-                    <p>(11) 96340-4005</p>
-                </div>
-
-            </div>
-
-            <div class="contact-item">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <div>
-                    <h3>Atendimento</h3>
-                    <p>São Paulo - SP</p>
-                </div>
-
-            </div>
-
+      <div class="tab-pane active" id="t1">
+        <h3>Atendimento comercial próximo</h3>
+        <p class="tab-lead">Você fala com quem entende do mercado e pode orientar sua compra com mais clareza, agilidade e atenção.</p>
+        <div class="tab-checks">
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Nada de atendimento distante ou demorado</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Suporte comercial para encontrar soluções que façam sentido para a operação</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Relacionamento consultivo, não apenas transacional</span></div>
         </div>
+      </div>
 
-        <a href="https://wa.me/5511963404005"
-           target="_blank"
-           class="btn-primary">
+      <div class="tab-pane" id="t2">
+        <h3>Foco em food service</h3>
+        <p class="tab-lead">Trabalhamos com soluções pensadas para empresas que vendem comida todos os dias e precisam de abastecimento constante.</p>
+        <div class="tab-checks">
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Entendemos que o comprador precisa de preço, prazo e variedade</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Disponibilidade e atendimento rápido para a rotina da sua operação</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Especialistas em representar, focados em vender</span></div>
+        </div>
+      </div>
 
-            <i class="fa-brands fa-whatsapp"></i>
-            Falar no WhatsApp
+      <div class="tab-pane" id="t3">
+        <h3>Conexão com marcas e distribuidores</h3>
+        <p class="tab-lead">Aproximamos sua empresa de oportunidades comerciais com parceiros do setor alimentício.</p>
+        <div class="tab-checks">
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Acesso facilitado a produtos, negociações e condições competitivas</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Ponte entre indústrias, distribuidores e empresas compradoras</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Portfólio com congelados, carnes, laticínios, massas e muito mais</span></div>
+        </div>
+      </div>
 
-        </a>
+      <div class="tab-pane" id="t4">
+        <h3>Negociação B2B</h3>
+        <p class="tab-lead">Nosso atendimento é pensado para empresas que compram com volume, recorrência e necessidade de abastecimento profissional.</p>
+        <div class="tab-checks">
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>A BDF FOODS entende a rotina de quem precisa cotar, comparar e negociar</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Suporte em cotação, disponibilidade e oportunidades comerciais</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Manter o estoque em movimento com mais segurança</span></div>
+        </div>
+      </div>
 
-    </section>
+      <div class="tab-pane" id="t5">
+        <h3>Atuação em São Paulo</h3>
+        <p class="tab-lead">A BDF FOODS atua comercialmente com foco em empresas do estado de São Paulo e região.</p>
+        <div class="tab-checks">
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Atendimento mais próximo, prático e alinhado ao mercado local</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Disponibilidade varia conforme produto, distribuidor e condição comercial</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Consulte nossa equipe para verificar abrangência para seu negócio</span></div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="t6">
+        <h3>Quem é a BDF FOODS</h3>
+        <p class="tab-lead">A BDF FOODS é uma empresa do Grupo BDF especializada em representação comercial no segmento de food service, atacado e varejo.</p>
+        <div class="tab-checks">
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Atuamos como ponte entre indústrias, distribuidores e empresas compradoras</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Relacionamento comercial, suporte em negociações e soluções para abastecimento eficiente</span></div>
+          <div class="tab-check"><i class="fa-solid fa-check"></i><span>Nossa missão é aproximar empresas de boas oportunidades comerciais no setor alimentício</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="produtos" id="produtos">
+  <span class="eyebrow">Portfólio</span>
+  <h2 class="section-title display">Um portfólio pensado para o food service</h2>
+  <p class="section-lead">A BDF FOODS trabalha com soluções alimentícias voltadas para empresas que precisam de variedade, regularidade e suporte comercial.</p>
+  <div class="prod-grid">
+    <div class="prod-card">
+      <i class="fa-solid fa-snowflake"></i>
+      <h3>Congelados &amp; Proteínas</h3>
+      <p>Carnes, proteínas, batatas e acompanhamentos para operações que precisam de constância e qualidade.</p>
+    </div>
+    <div class="prod-card">
+      <i class="fa-solid fa-cheese"></i>
+      <h3>Laticínios &amp; Embutidos</h3>
+      <p>Variedade de laticínios e embutidos para restaurantes, pizzarias e food service em geral.</p>
+    </div>
+    <div class="prod-card">
+      <i class="fa-solid fa-bowl-food"></i>
+      <h3>Massas &amp; Condimentos</h3>
+      <p>Massas, molhos e condimentos para preparo profissional com regularidade e suporte comercial.</p>
+    </div>
+    <div class="prod-card">
+      <i class="fa-solid fa-box"></i>
+      <h3>Food Service</h3>
+      <p>Soluções voltadas para restaurantes, pizzarias, lanchonetes e cozinhas industriais com abastecimento constante.</p>
+    </div>
+    <div class="prod-card">
+      <i class="fa-solid fa-store"></i>
+      <h3>Atacado</h3>
+      <p>Apoio comercial para empresas que realizam compras em volume e buscam melhores oportunidades de negociação.</p>
+    </div>
+    <div class="prod-card">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <h3>Varejo</h3>
+      <p>Atendimento para mercados e conveniências que desejam ampliar suas opções de abastecimento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare">
+  <div class="compare-grid">
+    <div class="compare-box">
+      <span class="eyebrow">Já tem fornecedor?</span>
+      <h3 class="display">Você já tem fornecedor? Ótimo. Agora compare.</h3>
+      <p class="sub">Ter fornecedor não significa que sua empresa está comprando nas melhores condições. Com a BDF FOODS, você pode comparar antes de decidir.</p>
+      <div class="compare-list">
+        <div class="compare-item"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Compare preço</span></div>
+        <div class="compare-item"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Compare variedade</span></div>
+        <div class="compare-item"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Compare atendimento</span></div>
+        <div class="compare-item"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Compare disponibilidade</span></div>
+        <div class="compare-item"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Compare condições comerciais</span></div>
+      </div>
+      <p style="margin-top:20px;font-size:14px;color:var(--mid);">Você não precisa trocar tudo de uma vez. Pode começar cotando os produtos que mais compra.</p>
+      <a href="https://wa.me/5511963404005" target="_blank" class="compare-cta">
+        <i class="fa-brands fa-whatsapp"></i>
+        Comparar condições agora
+      </a>
+    </div>
+    <div class="compare-impact">
+      <h3 class="display">Fornecedor bom ajuda sua operação a vender melhor</h3>
+      <div class="impact-list">
+        <div class="impact-item">
+          <div class="impact-dot"></div>
+          <p><strong>Quando você compra melhor,</strong> sua margem melhora.</p>
+        </div>
+        <div class="impact-item">
+          <div class="impact-dot"></div>
+          <p><strong>Quando o atendimento é rápido,</strong> sua rotina fica mais leve.</p>
+        </div>
+        <div class="impact-item">
+          <div class="impact-dot"></div>
+          <p><strong>Quando existe variedade,</strong> sua operação ganha mais possibilidades.</p>
+        </div>
+        <div class="impact-item">
+          <div class="impact-dot"></div>
+          <p><strong>Quando o fornecedor entende seu negócio,</strong> a compra fica mais estratégica.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="como" id="como">
+  <span class="eyebrow">Processo</span>
+  <h2 class="section-title display" style="text-align:center;">Como começar a comprar com a BDF FOODS</h2>
+  <p class="section-lead" style="margin:0 auto 64px;text-align:center;">Simples, rápido e direto.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Chame no WhatsApp</h4>
+      <p>Envie sua necessidade, tipo de negócio e os produtos que procura.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Atendimento Comercial</h4>
+      <p>Nossa equipe entende sua demanda e verifica as melhores opções disponíveis.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Negocie Produtos</h4>
+      <p>Você recebe suporte para cotação, disponibilidade e oportunidades comerciais.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>Abasteça seu Negócio</h4>
+      <p>Uma ponte comercial preparada para atender food service, atacado e varejo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depo">
+  <span class="eyebrow">Parceiros</span>
+  <h2 class="section-title display">O que nossos parceiros dizem</h2>
+  <p class="section-lead">Relacionamentos comerciais que ajudam empresas a crescer com mais segurança.</p>
+  <div class="depo-grid">
+    <div class="depo-card">
+      <p>"Atendimento rápido, negociação transparente e excelentes oportunidades comerciais para nossa operação."</p>
+      <div class="depo-meta">
+        <div class="depo-avatar"><i class="fa-solid fa-building"></i></div>
+        <div>
+          <div class="depo-name">Rede de Restaurantes</div>
+          <div class="depo-role">São Paulo — SP</div>
+        </div>
+      </div>
+    </div>
+    <div class="depo-card">
+      <p>"Conseguimos ampliar nosso abastecimento com mais segurança e melhores condições de compra."</p>
+      <div class="depo-meta">
+        <div class="depo-avatar"><i class="fa-solid fa-store"></i></div>
+        <div>
+          <div class="depo-name">Mercado Parceiro</div>
+          <div class="depo-role">Food Service — SP</div>
+        </div>
+      </div>
+    </div>
+    <div class="depo-card">
+      <p>"A BDF FOODS facilitou negociações e trouxe novas oportunidades para o nosso negócio crescer."</p>
+      <div class="depo-meta">
+        <div class="depo-avatar"><i class="fa-solid fa-utensils"></i></div>
+        <div>
+          <div class="depo-name">Food Service</div>
+          <div class="depo-role">Cozinha Industrial — SP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <span class="eyebrow">Dúvidas</span>
+  <h2 class="section-title display">Perguntas frequentes</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-q">
+        A BDF FOODS atende pessoa física?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">Não. O foco principal é atendimento para empresas, compradores e negócios do segmento alimentício.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Quais tipos de empresas vocês atendem?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">Atendemos restaurantes, pizzarias, buffets, mercados, redes, cozinhas profissionais, lanchonetes, padarias e negócios food service.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Vocês atendem em São Paulo?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">Sim. A atuação comercial da BDF FOODS é voltada para São Paulo e região. A disponibilidade pode variar conforme produto, distribuidor e condição comercial.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Como faço para receber uma cotação?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">Basta chamar no WhatsApp, informar seu tipo de negócio e os produtos que procura. Nossa equipe irá entender sua necessidade e orientar o atendimento comercial.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Vocês trabalham com quais produtos?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">A BDF FOODS atua com soluções alimentícias para food service, atacado e varejo. A disponibilidade de produtos e marcas deve ser consultada diretamente com a equipe comercial.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        Posso cotar mesmo já tendo fornecedor?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">Sim. Você pode cotar para comparar condições, conhecer novas oportunidades e avaliar se existe uma solução melhor para sua empresa.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        A cotação tem compromisso?
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <div class="faq-a">Não. O atendimento inicial é para entender sua necessidade e verificar possibilidades comerciais para o seu negócio.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <span class="eyebrow">Contato</span>
+  <h2 class="section-title display">Fale com a BDF FOODS e encontre melhores soluções para abastecer sua empresa</h2>
+  <p class="section-lead">Atendimento comercial para compradores do food service, atacado e varejo em São Paulo. Se sua empresa precisa de fornecedor, variedade e atendimento próximo — fale agora com nossa equipe.</p>
+  <div class="contact-cards">
+    <div class="contact-card">
+      <i class="fa-brands fa-whatsapp"></i>
+      <div>
+        <h4>WhatsApp</h4>
+        <p>(11) 96340-4005</p>
+      </div>
+    </div>
+    <div class="contact-card">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <h4>Atendimento</h4>
+        <p>São Paulo e região</p>
+      </div>
+    </div>
+  </div>
+  <a href="https://wa.me/5511963404005" target="_blank" class="btn-primary">
+    <i class="fa-brands fa-whatsapp"></i>
+    Solicitar atendimento pelo WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="logo.png" alt="BDF FOODS">
+  </div>
+  <p>© 2025 BDF FOODS — Grupo BDF. Todos os direitos reservados.</p>
+  <p>São Paulo — SP &nbsp;·&nbsp; (11) 96340-4005</p>
+</footer>
+
+<script>
+  // Tabs
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.tab;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const isOpen = q.classList.contains('open');
+      document.querySelectorAll('.faq-q').forEach(x => { x.classList.remove('open'); x.nextElementSibling.classList.remove('open'); });
+      if (!isOpen) { q.classList.add('open'); q.nextElementSibling.classList.add('open'); }
+    });
+  });
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.style.opacity=1; e.target.style.transform='translateY(0)'; } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.dor-card, .atende-card, .prod-card, .depo-card, .step, .compare-box, .compare-impact').forEach(el => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    io.observe(el);
+  });
+</script>
 
 </body>
-
 </html>
-```
